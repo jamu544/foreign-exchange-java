@@ -7,6 +7,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,6 +17,9 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class FragmentTwo extends Fragment {
+
+    TextView textViewAustralia;
+    TextView textViewEuros;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -58,7 +64,12 @@ public class FragmentTwo extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_two, container, false);
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_two, container, false);
+        textViewAustralia = view.findViewById(R.id.textViewAustralianDollar);
+        textViewEuros = view.findViewById(R.id.textViewEuros);
+        textViewAustralia.setText("JHKJKJ");
+        textViewEuros.setText("IDUDH");
+        return view;
     }
 }

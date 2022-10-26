@@ -20,7 +20,7 @@
 
 
     <EditText
-        android:id="@+id/editTextAustralianDollar"
+        android:id="@+id/textViewAustralianDollar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -30,7 +30,7 @@
         android:padding="10dp" />
 
     <EditText
-        android:id="@+id/editTextEuro"
+        android:id="@+id/textViewEuros"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
